@@ -38,21 +38,24 @@ function HeroSection({ isMenuShown }) {
           the <span className="text-thBlue font-bold">future</span> is here
         </h1>
 
-        <div className="flex items-center justify-center flex-row">
-          <GradientBtn className="capitalize" title="get anton" />
-          <GradientBtn className="capitalize mx-12" title="products" />
+        <div className="flex items-center justify-center">
+          <GradientBtn className="capitalize px-3 md:px-6" title="get anton" />
+          <GradientBtn
+            className="capitalize px-3 md:px-6 mx-5 md:mx-12 "
+            title="products"
+          />
 
           {isVIdeoPlaying ? (
             <FaPauseCircle
-              size={30}
+              // size={35}
               onClick={handleVideoPause}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-110 duration-200 text-thBlue text-4xl md:text-4xl"
             />
           ) : (
             <FaPlayCircle
-              size={30}
+              // size={35}
               onClick={handleVidoePlay}
-              className="cursor-pointer hover:scale-110 duration-200 text-thBlue"
+              className="cursor-pointer hover:scale-110 duration-200 text-thBlue text-4xl md:text-4xl"
             />
           )}
         </div>
