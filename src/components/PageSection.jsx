@@ -1,5 +1,3 @@
-import React from "react";
-
 function PageSection({ name, title, subtitle, children }) {
   return (
     <div name={name} className="max-w-screen-xl mx-auto h-fit">
